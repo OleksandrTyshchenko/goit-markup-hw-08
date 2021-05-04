@@ -1,0 +1,33 @@
+.value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value__item:not(first-child) {
+  margin-right: 30px;
+}
+
+.value__subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--title-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.value__text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.value__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--box-backgroun-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,137 @@
+.hero-content__button {
+  display: inline-block;
+  padding: 10px 32px;
+  color: var(--color-white);
+  font-family: inherit;
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--button-active-color);
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  padding: 10px 28px 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--button-active-color);
+}
+
+.filter__item .filter__button.curent {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.filter__button {
+  display: inline-block;
+  padding: 6px 22px;
+  min-width: 73px;
+  border-radius: 4px;
+  color: var(--title-color);
+  font-family: inherit;
+  background-color: var(--box-backgroun-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.modal__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  padding: 10px 55px;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--button-active-color);
+}
+
+.modal__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin-top: 8px;
+  margin-right: 8px;
+
+  height: 30px;
+  width: 30px;
+
+  border: none;
+
+  outline: none;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  fill: var(--accent-color);
+}
