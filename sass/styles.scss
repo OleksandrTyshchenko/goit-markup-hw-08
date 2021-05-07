@@ -1409,3 +1409,229 @@ img {
 }
 
 /* меню мобилки */
+
+.menu__button {
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    bottom: 10px;
+
+    z-index: 99999;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu__btn {
+  @media screen and (max-width: 767px) {
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: none;
+    transition-duration: 250ms;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #212121;
+  }
+}
+
+.menu__btn:focus,
+.menu__btn:hover {
+  @media screen and (max-width: 767px) {
+    fill: #2196f3;
+
+    transition-duration: 250ms;
+  }
+}
+
+.icon-close {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.is-open .icon-close {
+  display: block;
+}
+
+.is-open .icon-open {
+  display: none;
+}
+
+.mobile-menu {
+  @media screen and (max-width: 479px) {
+    position: fixed;
+    left: 0;
+    top: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding: 28px 63px 28px 20px;
+    background-color: #fff;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    transition-duration: 250ms;
+
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    z-index: 105;
+  }
+}
+
+.mobile-menu.is-open {
+  @media screen and (max-width: 479px) {
+    top: 0%;
+  }
+}
+
+.mobile-menu {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    left: 0;
+    top: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 83px 48px 40px;
+    background-color: #fff;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    transition-duration: 250ms;
+
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    z-index: 105;
+  }
+}
+
+.mobile-menu.is-open {
+  @media screen and (max-width: 767px) {
+    top: 0%;
+  }
+}
+
+.mobile-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile-menu__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-menu__item .current {
+  @media screen and (max-width: 767px) {
+    color: #2196f3;
+  }
+}
+
+.mobile-menu__link {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+
+.mobile-social {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+  }
+}
+
+.connection-menu {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
+}
+
+.connection-menu__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+
+.connection-menu__tel {
+  @media screen and (max-width: 479px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.18;
+    color: #2196f3;
+  }
+}
+
+.connection-menu__tel {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    color: #2196f3;
+  }
+}
+
+.connection-menu__mail {
+  @media screen and (max-width: 479px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17x;
+    color: #757575;
+  }
+}
+.connection-menu__mail {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17x;
+    color: #757575;
+  }
+}
+
+.social-menu {
+  @media screen and (max-width: 767px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 40px;
+  }
+}
+
+.social-menu__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+  }
+}
+
+.social-menu__link {
+  @media screen and (max-width: 479px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #2196f3;
+  }
+}
+
+.social-menu__link {
+  @media screen and (min-width: 480px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #2196f3;
+  }
+}
