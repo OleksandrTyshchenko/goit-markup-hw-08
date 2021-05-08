@@ -1,0 +1,115 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1199.98px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+}
+
+.filter__item {
+  height: 44px;
+  list-style: none;
+  border: none;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 21px;
+  }
+}
+
+.filter__item .filter__button.curent {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.filter__button {
+  display: inline-block;
+  padding: 6px 22px;
+  min-width: 73px;
+  border-radius: 4px;
+  color: var(--title-color);
+  font-family: inherit;
+  background-color: var(--box-backgroun-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-basis: calc(100% / 2 - 30px);
+    max-width: 354px;
+    height: 440px;
+  }
+}
+
+.project__card {
+  color: var(--contact-header-color);
+  display: block;
+  text-decoration: none;
+}
+
+.project__card:hover,
+.project__card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project__box {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}

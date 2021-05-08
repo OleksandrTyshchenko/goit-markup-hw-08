@@ -1,0 +1,29 @@
+.navigation__logo__web {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.navigation__logo__studio {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.navigation__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+  }
+}
