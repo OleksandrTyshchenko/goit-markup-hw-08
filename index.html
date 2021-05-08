@@ -55,8 +55,8 @@
         <div class="menu__button">
             <button type="button" class="menu__btn" data-menu-button>
                 <svg class="menu__icon" width="40" height="40">
-                    <use class="icon-open" href="./img/icons.svg#icon-menu40px"></use>
-                    <use class="icon-close" href="./img/icons.svg#icon-close40px"></use>
+                    <use class="icon-open" href="./images/symbol-defs.svg#iconmenu_40px"></use>
+                    <use class="icon-close" href="./images/symbol-defs.svg#iconclose_40px"></use>
                 </svg>
             </button>
         </div>
@@ -167,19 +167,37 @@
                     <h2 class="title">Чем мы занимаемся</h2>
                     <ul class="work grid">
                         <li class="work__item">
-                            <img src="./images/imgs.jpg" alt="проектирование" width="370" height="294">
+                            <picture>
+                                <source
+                                srcset="./images/box/box1.jpg 1x, ./images/box/box1@2x.jpg 2x" 
+                                >
+                                <img src="./images/box/box1.jpg" alt="проектирование" width="370" height="294">
+                            </picture>
+                            
                             <div class="work__title">
                                 <p class="work__text">Десктопные приложения</p>
                             </div>
                          </li>
                         <li class="work__item">
-                            <img src="./images/img1s.jpg" alt="Дизайн" width="370" height="294">
+                            <picture>
+                                <source 
+                                srcset="./images/box/box2.jpg 1x, ./images/box/box2@2x.jpg 2x"
+                                >
+                                <img src="./images/box/box2.jpg" alt="Дизайн" width="370" height="294">
+                            </picture>
+                            
                             <div class="work__title">
                                 <p class="work__text">Мобильные приложения</p>
                             </div>
                         </li>
                         <li class="work__item">
-                            <img src="./images/img2s.jpg" alt="Редакция" width="370" height="294">
+                            <picture>
+                                <source 
+                                srcset="./images/box/box3.jpg 1x, ./images/box/box3@2x.jpg 2x"
+                                >
+                               <img src="./images/box/box3.jpg" alt="Редакция" width="370" height="294"> 
+                            </picture>
+                            
                             <div class="work__title">
                                 <p class="work__text">Дизайнерские решения</p>
                             </div>
@@ -192,7 +210,21 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__list">
-                        <img src="./images/m3s.jpg" alt="Игорь Демьяненко Продакт-дизайнер" width="270" height="260">
+                        <picture>
+                            <source
+                            srcset="./images/team/desktop/i.d.desktop.jpg 1x, ./images/team/desktop/i.d.desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            >
+                            <source
+                            srcset="./images/team/tablet/i.d.tadlet.jpg 1x, ./images/team/tablet/i.d.tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            >
+                            <source
+                            srcset="./images/team/mobile/i.d.mobile.jpg 1x, ./images/team/mobile/i.d.mobile@2x.jpg 2x"
+                            media="(max-width: 767.98px)"
+                            >
+                            <img src="./images/team/desktop/i.d.desktop.jpg"  alt="Игорь Демьяненко Продакт-дизайнер"  >
+                        </picture>
                         <div class="team__signature">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__responsibilities" lang="en">Product Designer</p>
@@ -230,7 +262,22 @@
                         
                     </li>
                     <li class="team__list">
-                        <img src="./images/ws.jpg" alt="Ольга Репина Фронтенд-разработчик" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/team/desktop/o.r.desktop.jpg 1x, ./images/team/desktop/o.r.desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source 
+                                srcset="./images/team/tablet/o.r.tablet.jpg 1x, ./images/team/tablet/o.r.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source 
+                                srcset="./images/team/mobile/o.r.mobile.jpg 1x, ./images/team/mobile/o.r.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)"
+                            >
+                                
+                            <img src="./images/team/desktop/o.r.desktop.jpg"  alt="Ольга Репина Фронтенд-разработчик">
+                        </picture>
                         <div class="team__signature">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__responsibilities" lang="en">Frontend Developer</p>
@@ -267,7 +314,21 @@
                         </div>
                     </li>
                     <li class="team__list">
-                        <img src="./images/ms.jpg" alt="Николай Тарасов Маркетинг" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/team/desktop/n.t.desktop.jpg 1x, ./images/team/desktop/n.t.desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source 
+                                srcset="./images/team/tablet/n.t.tadlet.jpg 1x, ./images/team/tablet/n.t.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source 
+                                srcset="./images/team/mobile/n.t.mobile.jpg 1x, ./images/team/mobile/n.t.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)"
+                            >
+                            <img src="./images/team/desktop/n.t.desktop.jpg"  alt="Николай Тарасов Маркетинг">
+                        </picture>
                         <div class="team__signature">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__responsibilities" lang="en">Marketing</p>
@@ -304,7 +365,21 @@
                         </div>
                     </li>
                     <li class="team__list">
-                        <img src="./images/m2s.jpg" alt="Михаил Ермаков Веб-дизайн" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/team/desktop/m.e.desktop.jpg 1x, ./images/team/desktop/m.e.desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source 
+                                srcset="./images/team/tablet/m.e.tadlet.jpg 1x, ./images/team/tablet/m.e.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source 
+                                srcset="./images/team/mobile/m.e.mobile.jpg 1x, ./images/team/mobile/m.e.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)"
+                            >
+                            <img src="./images/team/desktop/m.e.desktop.jpg"  alt="Михаил Ермаков Веб-дизайн">
+                        </picture>
                         <div class="team__signature">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__responsibilities" lang="en">UI Designer</p>

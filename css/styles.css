@@ -986,6 +986,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form-input {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
 .footer__button {
   display: flex;
   align-items: center;
@@ -1475,7 +1482,7 @@ img {
     right: 15px;
     top: 10px;
     bottom: 10px;
-    z-index: 99999;
+    z-index: 106;
   }
 }
 
@@ -1596,11 +1603,11 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .mobile-social {
-    position: absolute;
-    bottom: 0;
     left: auto;
+    bottom: 0;
+    position: absolute;
   }
 }
 
@@ -1654,10 +1661,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .social-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-bottom: 40px;
+    flex-wrap: wrap;
   }
 }
 

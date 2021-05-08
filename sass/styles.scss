@@ -912,6 +912,11 @@ img {
     height: 50px;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--background-footer-color);
@@ -1419,7 +1424,7 @@ img {
     top: 10px;
     bottom: 10px;
 
-    z-index: 99999;
+    z-index: 106;
   }
 
   @media screen and (min-width: 768px) {
@@ -1547,10 +1552,10 @@ img {
 }
 
 .mobile-social {
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    bottom: 0;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     left: auto;
+    bottom: 0;
+    position: absolute;
   }
 }
 
@@ -1603,10 +1608,9 @@ img {
 
 .social-menu {
   @media screen and (max-width: 767px) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-bottom: 40px;
+    flex-wrap: wrap;
   }
 }
 

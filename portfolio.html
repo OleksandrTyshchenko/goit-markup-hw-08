@@ -25,10 +25,10 @@
                 </a>
                 <ul class="site">
                     <li class="site__link">
-                        <a class="link site-nav__link" href="./index.html">Студия</a>
+                        <a class="link site-nav__link curent" href="./index.html">Студия</a>
                     </li>
                     <li class="site__link">
-                        <a class="link site-nav__link curent" href="./portfolio.html">Портфолио</a>
+                        <a class="link site-nav__link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="site__link">
                         <a class="link site-nav__link" href="">Контакты</a>
@@ -53,6 +53,63 @@
                 </li>
             </ul>
         </div>
+        <!--меню мобилки-->
+        <div class="menu__button">
+            <button type="button" class="menu__btn" data-menu-button>
+                <svg class="menu__icon" width="40" height="40">
+                    <use class="icon-open" href="./images/symbol-defs.svg#iconmenu_40px"></use>
+                    <use class="icon-close" href="./images/symbol-defs.svg#iconclose_40px"></use>
+                </svg>
+            </button>
+        </div>
+    
+        <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__item">
+                    <a href="./index.html" class="mobile-menu__link current">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+    
+            <div class="mobile-social">
+                <ul class="connection-menu">
+                    <li class="connection-menu__item">
+                        <a href="tel:+380961111111" class="connection-menu__tel">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="connection-menu__item">
+                        <a href="mailto:info@devstudio.com" class="connection-menu__mail">info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="social-menu">
+                    <li class="social-menu__item">
+                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                            aria-label="Instagram">Instagram</a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                            aria-label="Twitter">Twitter</a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                            aria-label="Facebook">Facebook</a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                            aria-label="LinkedIn">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    
     </header>
 <!--Потфолио-->
     <main>
@@ -250,7 +307,7 @@
         <!--Подвал-->
         <footer class="page-footer">
             <div class="container footer">
-                <div class="footer__contact">
+                <div class="footer__list">
                     <a class="footer__link" href="/">
                         <span class="footer__web">Web</span>
                         <span class="footer__studio">Studio</span>
@@ -269,7 +326,7 @@
                         </ul>
                     </address>
                 </div>
-                <div>
+                <div class="footer__social">
                     <h3 class="footer__social-title">присоединяйтесь</h3>
                     <ul class="footer__social-icons">
                         <li class="footer__icons">
@@ -305,6 +362,7 @@
                 <div class="footer__mail-form">
                     <h3 class="footer__social-title">Подпишитесь на рассылку</h3>
                     <form class="footer__form">
+        
                         <!-- <label for="user_email" class="footer-form-lable"></label>
                                     просто оставлю здесь, вдруг надо будет -->
                         <label for="user_email" class="footer__form-lable"></label>
@@ -315,8 +373,11 @@
                             </svg>
                         </button>
                     </form>
+        
                 </div>
             </div>
         </footer>
+
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
