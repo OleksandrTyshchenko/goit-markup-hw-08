@@ -1,11 +1,8 @@
 .menu__button {
   @media screen and (max-width: 767px) {
-    margin: 0;
-    padding: 0;
     position: absolute;
     right: 15px;
     top: 10px;
-    bottom: 10px;
 
     z-index: 106;
   }
@@ -13,6 +10,10 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.menu__button.is-open {
+  position: fixed;
 }
 
 .menu__btn {

@@ -1493,12 +1493,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu__button {
-    margin: 0;
-    padding: 0;
     position: absolute;
     right: 15px;
     top: 10px;
-    bottom: 10px;
     z-index: 106;
   }
 }
@@ -1507,6 +1504,10 @@ img {
   .menu__button {
     display: none;
   }
+}
+
+.menu__button.is-open {
+  position: fixed;
 }
 
 @media screen and (max-width: 767px) {
