@@ -106,7 +106,9 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
   overflow-y: scroll;
+  visibility: visible;
   z-index: 99999;
 }
 
@@ -116,15 +118,31 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   padding: 40px;
-  max-width: 450px;
-  width: 90%;
-  min-height: 581px;
+  overflow-y: scroll;
   background-color: var(--color-white);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    overflow-y: visible;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    overflow-y: visible;
+  }
 }
 
 .modal__btn {
@@ -190,7 +208,6 @@ img {
   padding-left: 42px;
   margin-top: 4px;
   background: var(--color-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   outline: none;
   transition-property: border;
@@ -275,7 +292,7 @@ img {
 .modal__policy {
   display: flex;
   align-items: center;
-  justify-content: center;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--contact-header-color);
   margin-top: 20px;
@@ -435,6 +452,10 @@ img {
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients {
+  margin: 0px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -599,7 +620,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -614,6 +634,10 @@ img {
   .footer__social-title {
     display: flex;
   }
+}
+
+.footer__social {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -755,8 +779,6 @@ img {
 .hero {
   background-color: var(--background-hero-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   display: flex;
   align-items: center;
 }
@@ -774,18 +796,24 @@ img {
 @media screen and (min-width: 480px) {
   .overlay {
     height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .overlay {
     height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay {
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1018,9 +1046,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-contact {
-    margin-top: 21px;
-    margin-bottom: 21px;
-    padding: 0px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin: 0px;
   }
 }
 
@@ -1069,6 +1097,10 @@ img {
     margin-right: 30px;
     margin-bottom: 0px;
   }
+}
+
+.site__link-contact:focus {
+  color: #2196f3;
 }
 
 /* иконки хедера */
@@ -1491,7 +1523,7 @@ img {
   fill: var(--background-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .menu__button {
     position: absolute;
     right: 15px;
@@ -1506,11 +1538,7 @@ img {
   }
 }
 
-.menu__button.is-open {
-  position: fixed;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .menu__btn {
     top: 0px;
     background-color: rgba(255, 255, 255, 0.02);
@@ -1521,7 +1549,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .menu__btn:focus,
   .menu__btn:hover {
     fill: #2196f3;
@@ -1529,7 +1557,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .icon-close {
     display: none;
   }
@@ -1543,7 +1571,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu {
     position: fixed;
     left: 0;
@@ -1563,13 +1591,13 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu.is-open {
     top: 0%;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu.is-open {
     top: 0%;
   }
@@ -1587,19 +1615,29 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu__item .current {
     color: #2196f3;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479.98px) {
+  .mobile-menu__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .mobile-menu__link {
     font-weight: 500;
     font-size: 40px;
@@ -1609,35 +1647,35 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-social {
     left: auto;
     bottom: 0;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .connection-menu {
     margin-bottom: 64px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .connection-menu__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479.98px) {
   .connection-menu__tel {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.18;
     color: #2196f3;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .connection-menu__tel {
     font-weight: 500;
     font-size: 34px;
@@ -1655,7 +1693,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .connection-menu__mail {
     font-weight: 500;
     font-size: 24px;
@@ -1664,7 +1702,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .social-menu {
     display: flex;
     padding-bottom: 40px;

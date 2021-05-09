@@ -1,5 +1,5 @@
 .menu__button {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     position: absolute;
     right: 15px;
     top: 10px;
@@ -12,12 +12,8 @@
   }
 }
 
-.menu__button.is-open {
-  position: fixed;
-}
-
 .menu__btn {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     top: 0px;
     background-color: rgba(255, 255, 255, 0.02);
     border: none;
@@ -30,7 +26,7 @@
 
 .menu__btn:focus,
 .menu__btn:hover {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     fill: #2196f3;
 
     transition-duration: 250ms;
@@ -38,7 +34,7 @@
 }
 
 .icon-close {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
@@ -52,7 +48,7 @@
 }
 
 .mobile-menu {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     position: fixed;
     left: 0;
     top: 100%;
@@ -77,13 +73,13 @@
 }
 
 .mobile-menu.is-open {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     top: 0%;
   }
 }
 
 .mobile-menu.is-open {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     top: 0%;
   }
 }
@@ -99,19 +95,27 @@
 }
 
 .mobile-menu__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 32px;
   }
 }
 
 .mobile-menu__item .current {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     color: #2196f3;
   }
 }
 
 .mobile-menu__link {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479.98px) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
@@ -121,35 +125,35 @@
 }
 
 .mobile-social {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     left: auto;
     bottom: 0;
   }
 }
 
 .connection-menu {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 64px;
   }
 }
 
 .connection-menu__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 32px;
   }
 }
 
 .connection-menu__tel {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 479.98px) {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.18;
     color: #2196f3;
   }
 }
 
 .connection-menu__tel {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
@@ -166,7 +170,7 @@
   }
 }
 .connection-menu__mail {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17x;
@@ -175,7 +179,7 @@
 }
 
 .social-menu {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: flex;
     padding-bottom: 40px;
     flex-wrap: wrap;
