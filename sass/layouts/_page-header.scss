@@ -109,7 +109,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    padding-left: 0px;
+    padding: 0px;
     margin: 0px;
   }
 }
@@ -149,10 +149,6 @@
   }
 }
 
-.site__link-contact:focus {
-  color: #2196f3;
-}
-
 /* иконки хедера */
 
 .contact-list {
@@ -189,6 +185,10 @@
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site__contact:focus {
+  color: #2196f3;
 }
 
 .site__icon {
