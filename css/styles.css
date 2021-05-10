@@ -402,6 +402,11 @@ img {
   line-height: 2;
   color: var(--title-color);
   margin-bottom: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 .project__subtitle {
@@ -992,7 +997,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .page-header .container {
     padding: 15px;
-    margin: 0px;
+    margin: auto;
   }
 }
 
@@ -1046,8 +1051,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-contact {
-    padding-top: 21px;
-    padding-bottom: 21px;
     margin: 0px;
   }
 }
@@ -1103,6 +1106,18 @@ img {
 .contact-list {
   display: flex;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .site__contact.mail {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .site__contact.tell {
+    padding-bottom: 21px;
+  }
 }
 
 .site__contact {
