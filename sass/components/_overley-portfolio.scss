@@ -50,6 +50,10 @@
 }
 
 .project__text {
+  @media screen and (max-width: 479.98px) {
+    font-size: 15px;
+    padding: 10px;
+  }
   position: absolute;
   top: 0;
   left: 0;

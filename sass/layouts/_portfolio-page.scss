@@ -89,7 +89,7 @@
     flex-basis: calc(100% / 2 - 30px);
     max-width: 354px;
     height: 440px;
-    border: 1px solid #eeeeee;
+    /*border: 1px solid #eeeeee;*/
   }
 }
 
@@ -106,7 +106,7 @@
 }
 
 .project__box {
-  @media screen and (max-width: 767.98px) {
+  /* @media screen and (max-width: 767.98px) {
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
@@ -120,7 +120,15 @@
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+  } */
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    min-height: 143px;
   }
+
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 
   padding-top: 20px;
   padding-right: 24px;
