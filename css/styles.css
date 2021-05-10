@@ -1271,6 +1271,7 @@ img {
     flex-basis: calc(100% / 2 - 30px);
     max-width: 354px;
     height: 440px;
+    border: 1px solid #eeeeee;
   }
 }
 
@@ -1286,13 +1287,32 @@ img {
 }
 
 .project__box {
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .project__box {
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project__box {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__box {
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
 }
 
 .value {
