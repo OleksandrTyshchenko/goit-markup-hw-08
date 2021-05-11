@@ -427,11 +427,23 @@ img {
   line-height: 1.2;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .navigation__logo__web {
+    font-size: 24px;
+  }
+}
+
 .navigation__logo__studio {
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .navigation__logo__studio {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -959,7 +971,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .container.header {
+    height: 60px;
+  }
 }
 
 .site-nav__link {
@@ -1581,7 +1598,6 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .menu__button {
-    position: absolute;
     right: 15px;
     top: 10px;
     z-index: 106;
